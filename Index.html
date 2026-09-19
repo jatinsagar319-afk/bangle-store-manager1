@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    >
+
+    <meta
+        name="theme-color"
+        content="#111827"
+    >
+
+    <meta
+        name="description"
+        content="Bangle Store Manager - Inventory, AI Set Maker and Sales Management"
+    >
+
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Bangle Store Manager</title>
+</head>
+
+<body>
+
+    <div id="app">
+
+        <!-- HEADER -->
+        <header class="app-header">
+
+            <div>
+                <p class="brand-small">BANGLE STORE</p>
+                <h1>Bangle Store Manager</h1>
+            </div>
+
+            <button
+                class="icon-button"
+                id="settingsButton"
+                aria-label="Settings"
+            >
+                ⚙️
+            </button>
+
+        </header>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <!-- Welcome -->
+            <section class="welcome-card">
+
+                <div>
+                    <span class="welcome-label">STORE MANAGER</span>
+
+                    <h2>
+                        Manage your<br>
+                        bangle business
+                    </h2>
+
+                    <p>
+                        Inventory, matching sets and sales
+                        in one place.
+                    </p>
+                </div>
+
+                <div class="welcome-icon">
+                    💎
+                </div>
+
+            </section>
+
+
+            <!-- QUICK ACTIONS -->
+            <section class="section">
+
+                <div class="section-heading">
+                    <h3>Quick Actions</h3>
+                </div>
+
+                <div class="quick-grid">
+
+                    <button
+                        class="action-card"
+                        data-page="inventory"
+                    >
+                        <span class="action-icon">📦</span>
+                        <span class="action-title">Inventory</span>
+                        <span class="action-subtitle">
+                            Manage products
+                        </span>
+                    </button>
+
+
+                    <button
+                        class="action-card ai-card"
+                        data-page="ai-set-maker"
+                    >
+                        <span class="action-icon">🤖</span>
+                        <span class="action-title">
+                            AI Set Maker
+                        </span>
+                        <span class="action-subtitle">
+                            Match sari & bangles
+                        </span>
+                    </button>
+
+
+                    <button
+                        class="action-card"
+                        data-page="new-sale"
+                    >
+                        <span class="action-icon">🧾</span>
+                        <span class="action-title">New Sale</span>
+                        <span class="action-subtitle">
+                            Create a sale
+                        </span>
+                    </button>
+
+
+                    <button
+                        class="action-card"
+                        data-page="bills"
+                    >
+                        <span class="action-icon">📋</span>
+                        <span class="action-title">Bills</span>
+                        <span class="action-subtitle">
+                            View bills
+                        </span>
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- BUSINESS MODULES -->
+            <section class="section">
+
+                <div class="section-heading">
+                    <h3>Business</h3>
+                </div>
+
+                <div class="list-card">
+
+                    <button
+                        class="list-item"
+                        data-page="reports"
+                    >
+                        <span class="list-icon">📊</span>
+
+                        <span class="list-text">
+                            <strong>Sale Reports</strong>
+                            <small>
+                                Daily, weekly and monthly sales
+                            </small>
+                        </span>
+
+                        <span class="arrow">›</span>
+                    </button>
+
+
+                    <button
+                        class="list-item"
+                        data-page="daily-parcha"
+                    >
+                        <span class="list-icon">📝</span>
+
+                        <span class="list-text">
+                            <strong>Daily Parcha</strong>
+                            <small>
+                                Track daily business activity
+                            </small>
+                        </span>
+
+                        <span class="arrow">›</span>
+                    </button>
+
+
+                    <button
+                        class="list-item"
+                        data-page="settings"
+                    >
+                        <span class="list-icon">⚙️</span>
+
+                        <span class="list-text">
+                            <strong>Settings</strong>
+                            <small>
+                                Store and app settings
+                            </small>
+                        </span>
+
+                        <span class="arrow">›</span>
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- EMPTY INVENTORY STATUS -->
+            <section class="inventory-status">
+
+                <div class="status-icon">
+                    📦
+                </div>
+
+                <div>
+                    <strong>Inventory is empty</strong>
+
+                    <p>
+                        Add your first product to start
+                        building your store database.
+                    </p>
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <!-- BOTTOM NAVIGATION -->
+        <nav class="bottom-nav">
+
+            <button
+                class="nav-item active"
+                data-page="home"
+            >
+                <span>⌂</span>
+                <small>Home</small>
+            </button>
+
+            <button
+                class="nav-item"
+                data-page="inventory"
+            >
+                <span>▣</span>
+                <small>Inventory</small>
+            </button>
+
+            <button
+                class="nav-item ai-nav"
+                data-page="ai-set-maker"
+            >
+                <span>✦</span>
+                <small>AI Set</small>
+            </button>
+
+            <button
+                class="nav-item"
+                data-page="new-sale"
+            >
+                <span>＋</span>
+                <small>Sale</small>
+            </button>
+
+            <button
+                class="nav-item"
+                data-page="settings"
+            >
+                <span>⚙</span>
+                <small>Settings</small>
+            </button>
+
+        </nav>
+
+    </div>
+
+
+    <!-- PAGE MESSAGE -->
+    <div
+        id="messageBox"
+        class="message-box"
+        aria-live="polite"
+    ></div>
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>
