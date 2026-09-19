@@ -1,0 +1,12 @@
+{
+    "name": "Bangle Store Manager",
+    "short_name": "Bangle Store",
+    "description": "Bangle shop inventory, AI set matching and sales management.",
+    "start_url": "./",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#f5f7fb",
+    "theme_color": "#111827",
+    "lang": "en-IN",
+    "icons": []
+}
