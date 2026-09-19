@@ -1,0 +1,1 @@
+# bangle-store-manager1
